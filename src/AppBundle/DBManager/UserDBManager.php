@@ -33,7 +33,7 @@ class UserDBManager
         $this->db->flush();
     }
 
-    public function getUser(string $email):? User
+    public function getUser(string $email)
     {
         return $this->db
             ->getRepository('AppBundle\Entity\User')
